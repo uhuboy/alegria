@@ -4427,85 +4427,85 @@ xmlns='http://www.w3.org/2000/svg'
         }
       }
 	  /* ===== บนจอเล็ก: ซ่อนเมนูแถวปกติ แสดงปุ่ม + เมนูดรอปดาวน์ ===== */
-@media (max-width: 768px) {
-  /* ซ่อนเมนูแถวแนวนอน */
-  .elementor-nav-menu--layout-horizontal {
-    display: none !important;
-  }
+	@media (max-width: 768px) {
+	  /* ซ่อนเมนูแถวแนวนอน */
+	  .elementor-nav-menu--layout-horizontal {
+		display: none !important;
+	  }
 
-  /* แสดงปุ่มเปิด-ปิดเมนู */
-  .elementor-menu-toggle {
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    padding: 10px 15px;
-    font-size: 24px;
-    border: none;
-    background: transparent;
-  }
+	  /* แสดงปุ่มเปิด-ปิดเมนู */
+	  .elementor-menu-toggle {
+		display: flex !important;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+		padding: 10px 15px;
+		font-size: 24px;
+		border: none;
+		background: transparent;
+	  }
 
-  /* เมนูดรอปดาวน์ — ซ่อนก่อนเปิด */
-  .elementor-nav-menu--dropdown {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background: #ffffff; /* สีพื้นหลังเมนู ปรับตามเว็บคุณ */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    z-index: 999;
-  }
+	  /* เมนูดรอปดาวน์ — ซ่อนก่อนเปิด */
+	  .elementor-nav-menu--dropdown {
+		display: none;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		background: #ffffff; /* สีพื้นหลังเมนู ปรับตามเว็บคุณ */
+		box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+		z-index: 999;
+	  }
 
-  /* เมื่อเปิดเมนู → แสดงเมนูดรอปดาวน์ */
-  .elementor-menu-toggle[aria-expanded="true"] + .elementor-nav-menu--dropdown,
-  .elementor-nav-menu--dropdown.show {
-    display: block;
-  }
+	  /* เมื่อเปิดเมนู → แสดงเมนูดรอปดาวน์ */
+	  .elementor-menu-toggle[aria-expanded="true"] + .elementor-nav-menu--dropdown,
+	  .elementor-nav-menu--dropdown.show {
+		display: block;
+	  }
 
-  /* ปรับรายการเมนูในดรอปดาวน์ */
-  .elementor-nav-menu--dropdown .elementor-nav-menu {
-    flex-direction: column;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
+	  /* ปรับรายการเมนูในดรอปดาวน์ */
+	  .elementor-nav-menu--dropdown .elementor-nav-menu {
+		flex-direction: column;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	  }
 
-  .elementor-nav-menu--dropdown .menu-item {
-    width: 100%;
-    border-bottom: 1px solid #eee;
-  }
+	  .elementor-nav-menu--dropdown .menu-item {
+		width: 100%;
+		border-bottom: 1px solid #eee;
+	  }
 
-  .elementor-nav-menu--dropdown .menu-link {
-    display: block;
-    padding: 14px 20px !important;
-    width: 100%;
-  }
+	  .elementor-nav-menu--dropdown .menu-link {
+		display: block;
+		padding: 14px 20px !important;
+		width: 100%;
+	  }
 
-  /* แสดงไอคอนเปิด ซ่อนไอคอนปิด ตอนปิดเมนู */
-  .elementor-menu-toggle[aria-expanded="false"] .elementor-menu-toggle__icon--open {
-    display: block;
-  }
-  .elementor-menu-toggle[aria-expanded="false"] .elementor-menu-toggle__icon--close {
-    display: none;
-  }
+	  /* แสดงไอคอนเปิด ซ่อนไอคอนปิด ตอนปิดเมนู */
+	  .elementor-menu-toggle[aria-expanded="false"] .elementor-menu-toggle__icon--open {
+		display: block;
+	  }
+	  .elementor-menu-toggle[aria-expanded="false"] .elementor-menu-toggle__icon--close {
+		display: none;
+	  }
 
-  /* ซ่อนไอคอนเปิด แสดงไอคอนปิด ตอนเปิดเมนู */
-  .elementor-menu-toggle[aria-expanded="true"] .elementor-menu-toggle__icon--open {
-    display: none;
-  }
-  .elementor-menu-toggle[aria-expanded="true"] .elementor-menu-toggle__icon--close {
-    display: block;
-  }
-}
+	  /* ซ่อนไอคอนเปิด แสดงไอคอนปิด ตอนเปิดเมนู */
+	  .elementor-menu-toggle[aria-expanded="true"] .elementor-menu-toggle__icon--open {
+		display: none;
+	  }
+	  .elementor-menu-toggle[aria-expanded="true"] .elementor-menu-toggle__icon--close {
+		display: block;
+	  }
+	}
 
-/* ===== บนจอใหญ่: ซ่อนปุ่มและเมนูดรอปดาวน์ ===== */
-@media (min-width: 769px) {
-  .elementor-menu-toggle,
-  .elementor-nav-menu--dropdown {
-    display: none !important;
-  }
-}
+	/* ===== บนจอใหญ่: ซ่อนปุ่มและเมนูดรอปดาวน์ ===== */
+	@media (min-width: 769px) {
+	  .elementor-menu-toggle,
+	  .elementor-nav-menu--dropdown {
+		display: none !important;
+	  }
+	}
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
   </head>
@@ -5620,28 +5620,28 @@ xmlns='http://www.w3.org/2000/svg'
       }, !1);
     </script>
 	<script>
-document.addEventListener('DOMContentLoaded', function() {
-  const toggleBtn = document.querySelector('.elementor-menu-toggle');
-  const dropdownMenu = document.querySelector('.elementor-nav-menu--dropdown');
+	document.addEventListener('DOMContentLoaded', function() {
+	  const toggleBtn = document.querySelector('.elementor-menu-toggle');
+	  const dropdownMenu = document.querySelector('.elementor-nav-menu--dropdown');
 
-  if (toggleBtn && dropdownMenu) {
-    // เปิด-ปิดเมื่อกดปุ่ม
-    toggleBtn.addEventListener('click', function() {
-      const isExpanded = toggleBtn.getAttribute('aria-expanded') === 'true';
-      toggleBtn.setAttribute('aria-expanded', String(!isExpanded));
-      dropdownMenu.classList.toggle('show');
-    });
+	  if (toggleBtn && dropdownMenu) {
+		// เปิด-ปิดเมื่อกดปุ่ม
+		toggleBtn.addEventListener('click', function() {
+		  const isExpanded = toggleBtn.getAttribute('aria-expanded') === 'true';
+		  toggleBtn.setAttribute('aria-expanded', String(!isExpanded));
+		  dropdownMenu.classList.toggle('show');
+		});
 
-    // ปิดเมนูเมื่อกดที่ลิงก์
-    dropdownMenu.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', function() {
-        toggleBtn.setAttribute('aria-expanded', 'false');
-        dropdownMenu.classList.remove('show');
-      });
-    });
-  }
-});
-</script>
+		// ปิดเมนูเมื่อกดที่ลิงก์
+		dropdownMenu.querySelectorAll('a').forEach(link => {
+		  link.addEventListener('click', function() {
+			toggleBtn.setAttribute('aria-expanded', 'false');
+			dropdownMenu.classList.remove('show');
+		  });
+		});
+	  }
+	});
+	</script>
   </body>
   <!-- Mirrored from alegriaconcept.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 18 Jul 2026 03:10:51 GMT -->
 </html>
