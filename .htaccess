@@ -1,9 +1,0 @@
-# เปิด Rewrite Engine
-RewriteEngine On
-
-# ถ้า request ไม่ใช่ไฟล์จริง และไม่ใช่โฟลเดอร์จริง
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-
-# ให้ redirect ไปที่ index.html
-RewriteRule ^ index.html [L]
